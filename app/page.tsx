@@ -1,5 +1,11 @@
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+
 export default function Page() {
   return (
-    <h1 className="text-5xl text-center font bold">Welcome to IQM</h1>
+    <>
+     <Navbar />
+     <Hero />
+    </>
   )
 }

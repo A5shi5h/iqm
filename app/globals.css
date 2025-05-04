@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-coolvetica: 'Coolvetica' , sans-serif; 
 }
 
 @theme inline {
@@ -17,6 +18,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('/fonts/coolvetica.ttf') format('ttf');
 }
 
 body {

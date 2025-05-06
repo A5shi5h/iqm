@@ -22,7 +22,8 @@
 
 @font-face {
   font-family: 'Coolvetica';
-  src: url('/fonts/coolvetica.ttf') format('ttf');
+  src: url('/fonts/Coolvetica.ttf') format('ttf');
+  src: url('/fonts/Creato.otf') format('otf');
 }
 
 body {

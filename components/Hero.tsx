@@ -3,9 +3,10 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const coolvetica = localFont({
-  src : "../fonts/Coolvetica.ttf",
+  src : "../public/fonts/Coolvetica.ttf",
 });
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -27,9 +28,9 @@ export default function Hero() {
           From learning to mastery<br />We make it happen
         </p>
 
-        <button className="mt-6 bg-[#11796B] text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-black transition-all">
+        <Link href={"signup"}><button className="mt-6 bg-[#11796B] text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-black transition-all cursor-pointer">
           Get Started
-        </button>
+        </button></Link>
       </div>
 
       {/* Right Blob Shape */}

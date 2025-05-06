@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <Link
           href="/login"
-          className="bg-[#11796B] text-white px-12 py-1 rounded-2xl shadow-md font-semibold text-2xl hover:bg-black shadow-slate-400"
+          className="bg-[#11796B] text-white px-12 py-1 rounded-2xl shadow-md font-semibold text-2xl hover:bg-black shadow-slate-400 cursor-pointer"
         >
           Login
         </Link>

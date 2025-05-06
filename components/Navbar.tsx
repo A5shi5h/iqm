@@ -37,7 +37,7 @@ const Navbar = () => {
             className="rounded-full"
           />
           <h1 className={`${poppins.className} font-bold text-4xl`}>IQM</h1>
-        </Link>
+        </div>
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center space-x-4 text-black font-medium text-md">
@@ -143,6 +143,7 @@ const Navbar = () => {
             className="bg-[#11796B] text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-black mt-2"
           >
             Login
+        </Link>
         </div>
       )}
 

@@ -7,6 +7,7 @@ import SignUpModal from "./SignUpModal";
 import { useState } from "react";
 
 const coolvetica = localFont({
+
   src: "../public/fonts/Coolvetica.ttf",
 });
 
@@ -16,6 +17,7 @@ export default function Hero() {
   const [showSignUp, setSignUp] = useState(false);
 
   return (
+
     <section
       className={`relative w-full min-h-screen flex items-center justify-between px-10 md:px-24 py-16${inter.className}`}
     >
@@ -69,6 +71,7 @@ export default function Hero() {
           height={40}
           className="absolute top-32 left-[40rem] scale-200 rotate-180"
         />
+
         <Image
           src="/images/swirl-bottom.svg"
           alt="Bottom swirl"
@@ -80,6 +83,7 @@ export default function Hero() {
 
       {/* Modal */}
       {showSignUp && <SignUpModal onClose={() => setSignUp(false)} />}
+
     </section>
   );
 }

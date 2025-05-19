@@ -61,6 +61,13 @@ export default function Hero() {
             height={500}
             className="rotate-90 scale-120 opacity-[0.25]"
           />
+          <Image 
+           src={"/images/heroImage.png"}
+           alt="Hero Image"
+           height={300}
+           width={300}
+           className="absolute top-25 left-10 scale-170"
+          />
         </div>
 
         {/* Decorative Swirls */}

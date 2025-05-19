@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { Inter, Poppins } from "next/font/google";
 import { Menu, X } from "lucide-react";
 import LoginModal from "./LoginModal";
@@ -41,7 +40,6 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center space-x-4 text-black font-medium text-md">
-
           <Link href="/" className="hover:bg-gray-200 px-4 py-4 rounded-lg">
             Home
           </Link>
@@ -80,7 +78,6 @@ const Navbar = () => {
           Login
         </button>
 
-
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center gap-4">
           <Link
@@ -89,8 +86,8 @@ const Navbar = () => {
           >
             Login
           </Link>
-          <button 
-            onClick={() => setMenuOpen(!menuOpen)} 
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
             className="text-black"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
@@ -101,7 +98,6 @@ const Navbar = () => {
 
       {/* Mobile Nav Menu */}
       {menuOpen && (
-
         <div className="md:hidden px-6 pb-4 flex flex-col space-y-2 bg-white text-sm font-medium">
           <Link
             href="/"
@@ -143,7 +139,7 @@ const Navbar = () => {
             className="bg-[#11796B] text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-black mt-2"
           >
             Login
-        </Link>
+          </Link>
         </div>
       )}
 

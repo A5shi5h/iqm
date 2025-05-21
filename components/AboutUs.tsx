@@ -29,7 +29,7 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           <h2 className={`${coolvetica.className} text-6xl font-normal z-10`}>1000+</h2>
           <Image
-            src={"/images/aboutBlob.svg"}
+            src={"/images/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -42,7 +42,7 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           <h2 className={`${coolvetica.className} text-6xl font-normal z-10`}>5</h2>
           <Image
-            src={"/images/aboutBlob.svg"}
+            src={"/images/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -53,7 +53,7 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           <h2 className={`${coolvetica.className} text-6xl font-normal z-10`}>10+</h2>
           <Image
-            src={"/images/aboutBlob.svg"}
+            src={"/images/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -64,7 +64,7 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           <h2 className={`${coolvetica.className} text-6xl font-normal z-10`}>6+</h2>
           <Image
-            src={"/images/aboutBlob.svg"}
+            src={"/images/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}

@@ -12,21 +12,22 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const [showLogin, setLogin] = useState(false);
 
   return (
     <nav
-      className={`${inter.className} w-full bg-white shadow-sm 
-      ${showLogin ? " bg-slate-200" : "bg-white"}`}
+      className={`${
+        inter.className
+      } w-full z-40 fixed top-0 bg-white ${
+        showLogin ? "bg-slate-200" : "bg-white"
+      }`}
     >
       <div
-        className={`${
+        className={`transition-opacity duration-300 max-w-7xl mx-auto px-4 py-4 flex items-center justify-between ${
           showLogin ? "opacity-20 pointer-events-none" : "opacity-100"
-        } transition-opacity duration-300 max-w-8xl mx-auto px-4 py-4 flex items-center justify-between`}
+        }`}
       >
-        {/* Logo and Brand */}
-
+        {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
             src="/images/logo.jpg"
@@ -35,116 +36,90 @@ const Navbar = () => {
             height={40}
             className="rounded-full"
           />
-          <h1 className={`${poppins.className} font-bold text-4xl`}>IQM</h1>
+          <h1 className={`${poppins.className} font-bold text-2xl md:text-4xl`}>
+            IQM
+          </h1>
         </div>
 
-        {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center space-x-4 text-black font-medium text-md">
-          <Link href="/" className="hover:bg-gray-200 px-4 py-4 rounded-lg">
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="hover:bg-gray-200 px-4 py-4 rounded-lg"
-          >
-            About us
-          </Link>
-          <Link
-            href="/course"
-            className="hover:bg-gray-200 px-4 py-4 rounded-lg"
-          >
-            Course
-          </Link>
-          <Link
-            href="/testimonial"
-            className="hover:bg-gray-200 px-4 py-4 rounded-lg"
-          >
-            Testimonial
-          </Link>
-          <Link
-            href="/blogs"
-            className="hover:bg-gray-200 px-6 py-4 rounded-lg"
-          >
-            Blogs
-          </Link>
+        {/* Desktop Links */}
+        <div className="hidden md:flex items-center space-x-4 font-medium text-black">
+          {["Home", "About us", "Course", "Testimonial", "Blogs"].map(
+            (label, index) => (
+              <Link
+                key={index}
+                href={
+                  label === "Home"
+                    ? "/"
+                    : `/${label.toLowerCase().replace(" ", "")}`
+                }
+                className="hover:bg-gray-200 px-4 py-2 rounded-lg"
+              >
+                {label}
+              </Link>
+            )
+          )}
         </div>
 
-        {/* Login Button */}
-
-        <button
-          onClick={() => setLogin(true)}
-          className="bg-[#11796B] text-white px-12 py-1 rounded-2xl shadow-md font-semibold text-2xl hover:bg-black shadow-slate-400 cursor-pointer"
-        >
-          Login
-        </button>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center gap-4">
-          <Link
-            href="/login"
-            className="bg-[#11796B] text-white px-4 py-1 rounded-2xl shadow-md font-semibold text-sm hover:bg-black transition-colors"
+        {/* Desktop Login */}
+        <div className="hidden md:block">
+          <button
+            onClick={() => setLogin(true)}
+            className="bg-[#11796B] text-white px-8 py-2 rounded-2xl shadow-md text-lg font-semibold hover:bg-black transition-colors"
           >
             Login
-          </Link>
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className="md:hidden flex items-center gap-2">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-black"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+            {menuOpen ? "" : <Menu size={34} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Nav Menu */}
-      {menuOpen && (
-        <div className="md:hidden px-6 pb-4 flex flex-col space-y-2 bg-white text-sm font-medium">
-          <Link
-            href="/"
-            className="hover:bg-gray-300 px-4 py-2 rounded-lg"
+      {/* Mobile Slide-In Menu */}
+      <div
+        className={`md:hidden fixed top-0 right-0 w-[40%] h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Close (X) button inside menu */}
+        <div className="flex justify-end p-4">
+          <button
             onClick={() => setMenuOpen(false)}
+            className="text-black absolute top-8 "
+            aria-label="Close menu"
           >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="hover:bg-gray-300 px-4 py-2 rounded-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            About us
-          </Link>
-          <Link
-            href="/course"
-            className="hover:bg-gray-300 px-4 py-2 rounded-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            Course
-          </Link>
-          <Link
-            href="/testimonial"
-            className="hover:bg-gray-300 px-4 py-2 rounded-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            Testimonial
-          </Link>
-          <Link
-            href="/blogs"
-            className="hover:bg-gray-300 px-4 py-2 rounded-lg"
-            onClick={() => setMenuOpen(false)}
-          >
-            Blogs
-          </Link>
-          <Link
-            href="/login"
-            className="bg-[#11796B] text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-black mt-2"
-          >
-            Login
-          </Link>
+            <X size={24} />
+          </button>
         </div>
-      )}
+
+        <div className="flex flex-col p-6 space-y-4 text-sm font-medium absolute top-2 ">
+          {["Home", "About us", "Course", "Testimonial", "Blogs"].map(
+            (label, index) => (
+              <Link
+                key={index}
+                href={
+                  label === "Home"
+                    ? "/"
+                    : `/${label.toLowerCase().replace(" ", "")}`
+                }
+                className="hover:bg-gray-200 px-4 py-2 rounded-lg"
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            )
+          )}
+        </div>
+      </div>
 
       {/* Modal */}
-
       {showLogin && <LoginModal onClose={() => setLogin(false)} />}
     </nav>
   );

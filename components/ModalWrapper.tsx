@@ -13,7 +13,7 @@ export default function ModalWrapper({
     <>
       {/* Overlay */}
       <div
-        className="fixed top-0 left-0 w-full h-full bg-black opacity-40 z-40"
+        className="fixed inset-0 bg-black/40 z-50"
         onClick={onClose}
       />
       

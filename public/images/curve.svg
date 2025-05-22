@@ -1,8 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="300.000000pt" height="116.000000pt" viewBox="0 0 300.000000 116.000000" preserveAspectRatio="xMidYMid meet">
-<metadata fill="#1a5653">
-Created by potrace 1.10, written by Peter Selinger 2001-2011
-</metadata>
-<g transform="translate(0.000000,116.000000) scale(0.100000,-0.100000)" fill="#1a5653" stroke="none">
-<path d="M1365 744 c-168 -19 -472 -80 -705 -143 -366 -99 -358 -108 19 -21 467 108 689 140 961 140 184 0 275 -9 460 -46 104 -20 504 -127 566 -151 11 -4 15 -3 10 5 -8 14 -304 112 -461 152 -280 72 -580 95 -850 64z" fill="#1a5653"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="39" viewBox="0 0 1280 39" fill="none">
+<ellipse cx="675" cy="47.5" rx="675" ry="47.5" transform="matrix(1 0 0.175239 0.984526 -43 0.175781)" fill="#106e63"/>
 </svg>

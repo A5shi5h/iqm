@@ -4,26 +4,26 @@ import Image from "next/image";
 import localFont from "next/font/local";
 
 const coolvetica = localFont({
-    src: "../public/fonts/Coolvetica.ttf",
+    src: "../../public/fonts/Coolvetica.ttf",
     variable: "--font-creato-thin",
 }); 
 
 const sansation = localFont({
-    src: "../public/fonts/Sansation-Regular.ttf",
+    src: "../../public/fonts/Sansation-Regular.ttf",
     variable: "--font-sansation",
 });
   
 
 export default function StartLearning() {
   return (
-    <section className="relative bg-white py-20 px-6 md:px-12">
+    <section className="relative bg-white py-20 px-6 md:px-12 mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
       <Image
             src="/images/swirl-top.svg"
             alt="Start Learning Illustration"
             width={100}
             height={100}
-            className="absolute right-0 top-0 rotate-90 scale-80"
+            className="absolute right-0 top-10 rotate-90 scale-80"
           />
         
         {/* Text Section */}

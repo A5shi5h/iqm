@@ -13,7 +13,7 @@ export default function SignUpModal({ onClose }: { onClose: () => void }) {
   return (
     <>
       <ModalWrapper onClose={onClose}>
-        <div className="absolute top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-90">
           <div className="h-[568px] w-[320px] bg-[#FAEBD7] rounded-md px-[16px] py-[64px] relative">
             {/* Cross Button */}
             <button

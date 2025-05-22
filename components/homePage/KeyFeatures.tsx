@@ -1,30 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import localFont from "next/font/local";
 
 const coolvetica = localFont({
-  src: "../public/fonts/Coolvetica.ttf",
+  src: "../../public/fonts/Coolvetica.ttf",
   variable: "--font-creato-thin",
 });
 
 export default function KeyFeatures() {
   return (
     <>
-      {/* Top Curve */}
-      <div className="bg-transparent">
-        <div className="-mb-px bg-[#106e63] overflow-hidden leading-none">
-          <svg
-            className="w-full h-[100px]"
-            viewBox="0 0 1440 100"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,100 C360,0 1080,0 1440,100 L1440,0 L0,0 Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+      {/* Top Curve with Trees */}
+      <TreeCurveBanner />
 
       {/* Main Content Section */}
       <section className="relative bg-[#106e63] py-16">
@@ -34,12 +22,11 @@ export default function KeyFeatures() {
               <h2
                 className={`${coolvetica.className} text-white text-6xl font-normal text-center pt-4`}
               >
-                Our <span className="underline text-[#1fc1a9]">Key</span>{" "}
-                Features
+                Our <span className="underline text-[#1fc1a9]">Key</span> Features
               </h2>
               <Image
                 src="/images/keyFeature.svg"
-                alt="Teaching"
+                alt="Key Feature"
                 height={300}
                 width={300}
                 className="w-full h-[90%]"
@@ -57,43 +44,48 @@ export default function KeyFeatures() {
             <FeatureCard
               title="Expert Mentorship"
               desc="Get guidance from the best teachers having 5+ years of experience"
-              icon="/icon-mentor.svg"
+              icon="/images/mentorship.jpg"
             />
             <FeatureCard
               title="Online/Offline Classes"
               desc="Whether you're from Sikkim or any corner of India, our classes are always accessible to you"
-              icon="/icon-online.svg"
+              icon="/images/online-classes.jpg"
             />
             <FeatureCard
               title="Weekly Mock Tests"
               desc="Weekend mock tests to sharpen your skills and stay prepared"
-              icon="/icon-test.svg"
+              icon="/images/mock-tests.jpg"
             />
             <FeatureCard
               title="24/7 Doubt Clearence"
               desc="Stuck on a problem? We’re here 24/7 to help you out—day or night"
-              icon="/icon-support.svg"
+              icon="/images/doubt-clearence.jpg"
             />
           </div>
         </div>
-      </section>
-
-      {/* Bottom Curve */}
-      <div className="bg-transparent">
-        <div className="-mt-px bg-[#106e63] overflow-hidden leading-none">
-          <svg
-            className="block w-full h-[100px]"
-            viewBox="0 0 1440 100"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0 C360,100 1080,100 1440,0 L1440,100 L0,100 Z"
-              fill="white"
+        
+         {/* Bottom Curve */}
+          <div className="relative">
+            <Image 
+              src="/images/curve.svg"
+              alt="Bottom Curve"
+              height={100}
+              width={100}
+              className="w-full rotate-180 absolute bottom-[-100px] z-31"
             />
-          </svg>
-        </div>
-      </div>
+          </div>
+
+          {/* Bottom Curve Border */}
+          <div className="relative">
+            <Image 
+              src="/images/curve-border.svg"
+              alt="Bottom Curve"
+              height={100}
+              width={100}
+              className="w-full rotate-180 absolute bottom-[-120px] z-30"
+            />
+          </div>
+      </section>
     </>
   );
 }
@@ -123,3 +115,54 @@ function FeatureCard({
     </div>
   );
 }
+
+function TreeCurveBanner() {
+  const treePositions = ["10%", "20%", "75%", "85%"];
+
+  return (
+    <div className="relative w-full h-[200px] overflow-hidden">
+      
+      {/* Top curve */}
+      <Image 
+        src="/images/curve.svg"
+        alt="Background Curve"
+        height={100}
+        width={100}
+        className="w-full absolute top-40 z-31"
+      />
+      
+      {/* Top curve Border */}
+      <Image 
+        src="/images/curve-border.svg"
+        alt="Background Curve"
+        height={100}
+        width={100}
+        className="w-full absolute top-35 z-30"
+      />
+
+      {/* Trees on top of the curve */}
+      {treePositions.map((left, index) => {
+        // Apply scale and lift only to trees at index 1 and 2
+        const isScaled = index === 1 || index === 2;
+        const treeClasses = `absolute ${
+          isScaled ? "top-[60px] scale-190" : "top-[90px]"
+        } transition-transform duration-300`;
+
+        return (
+          <Image
+            key={index}
+            src="/images/tree.svg"
+            alt={`Tree ${index}`}
+            width={40}
+            height={40}
+            className={`${treeClasses} scale-130`}
+            style={{ left }}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+
+

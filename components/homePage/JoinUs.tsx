@@ -4,17 +4,17 @@ import Image from 'next/image'
 import localFont from "next/font/local";
 
 const coolvetica = localFont({
-    src: "../public/fonts/Coolvetica.ttf",
+    src: "../../public/fonts/Coolvetica.ttf",
     variable: "--font-creato-thin",
 });
 
 const sansation = localFont({
-    src: "../public/fonts/Sansation-Regular.ttf",
+    src: "../../public/fonts/Sansation-Regular.ttf",
     variable: "--font-sansation",
 });
 
 const creato = localFont({
-    src: "../public/fonts/Creato.otf",
+    src: "../../public/fonts/Creato.otf",
 });
 
 export default function JoinUs() {

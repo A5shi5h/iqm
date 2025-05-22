@@ -1,11 +1,11 @@
-import AboutUs from "@/components/AboutUs";
+import AboutUs from "@/components/homePage/AboutUs";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import JoinUs from "@/components/JoinUs";
-import KeyFeatures from "@/components/KeyFeatures";
+import Hero from "@/components/homePage/Hero";
+import JoinUs from "@/components/homePage/JoinUs";
+import KeyFeatures from "@/components/homePage/KeyFeatures";
 import MobileApp from "@/components/MobileApp";
-import StartLearning from "@/components/StartLearning";
-import Testimonials from "@/components/Testimonials";
+import StartLearning from "@/components/homePage/StartLearning";
+import Testimonials from "@/components/homePage/Testimonials";
 
 export default function Page() {
   return (

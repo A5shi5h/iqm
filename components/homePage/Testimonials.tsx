@@ -39,21 +39,21 @@ export default function Testimonials() {
 
         {/* Blob Image */}
         <Image
-          src={"/images/swirl-top.svg"}
+          src={"/svgs/swirl-top.svg"}
           alt="Blob shape"
           height={60}
           width={60}
           className="absolute top-15 left-25 scale-180"
         />
         <Image
-          src={"/images/swirl-bottom.svg"}
+          src={"/svgs/swirl-bottom.svg"}
           alt="Blob shape"
           height={60}
           width={60}
           className="rotate-90 scale-180 absolute top-15 right-25"
         />
         <Image
-          src={"/images/crown.svg"}
+          src={"/svgs/crown.svg"}
           alt="Blob shape"
           height={60}
           width={60}

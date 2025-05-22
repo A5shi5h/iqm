@@ -31,7 +31,7 @@ export default function AboutUs() {
             1000+
           </h2>
           <Image
-            src={"/images/circle.svg"}
+            src={"/svgs/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -46,7 +46,7 @@ export default function AboutUs() {
             5
           </h2>
           <Image
-            src={"/images/circle.svg"}
+            src={"/svgs/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -61,7 +61,7 @@ export default function AboutUs() {
             10+
           </h2>
           <Image
-            src={"/images/circle.svg"}
+            src={"/svgs/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -76,7 +76,7 @@ export default function AboutUs() {
             6+
           </h2>
           <Image
-            src={"/images/circle.svg"}
+            src={"/svgs/circle.svg"}
             alt="Blob shape"
             height={60}
             width={60}
@@ -109,7 +109,7 @@ export default function AboutUs() {
         {/* Images */}
         <div className="relative">
           <Image
-            src={"/images/aboutBlob2.svg"}
+            src={"/svgs/aboutBlob2.svg"}
             alt="Blob shape"
             height={300}
             width={300}

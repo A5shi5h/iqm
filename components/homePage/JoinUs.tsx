@@ -26,14 +26,14 @@ export default function JoinUs() {
           {/* Left side - image + bg */}
           <div className="w-full md:w-[40%] flex items-center justify-center p-10">
             <Image
-              src="/images/swirl-bottom.svg"
+              src="/svgs/swirl-bottom.svg"
               alt="swirl"
               width={200}
               height={200}
               className="absolute z-30 scale-40 top-40 left-50"
             />
             <Image
-              src="/images/aboutBlob2.svg"
+              src="/svgs/aboutBlob2.svg"
               alt="blob"
               width={500}
               height={500}

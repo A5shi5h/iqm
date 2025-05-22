@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-center">
         {/* Blob */}
         <Image
-          src="/images/blob.svg"
+          src="/svgs/blob.svg"
           alt="Blob shape"
           height={550}
           width={550}
@@ -69,7 +69,7 @@ export default function Hero() {
 
       {/* Decorative Swirls */}
       <Image
-        src="/images/swirl-top.svg"
+        src="/svgs/swirl-top.svg"
         alt="Top swirl"
         width={40}
         height={40}
@@ -77,7 +77,7 @@ export default function Hero() {
       />
 
       <Image
-        src="/images/swirl-bottom.svg"
+        src="/svgs/swirl-bottom.svg"
         alt="Bottom swirl"
         width={40}
         height={40}

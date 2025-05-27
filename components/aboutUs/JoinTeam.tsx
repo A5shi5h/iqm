@@ -17,6 +17,7 @@ export default function StartLearning() {
   return (
     <section className="relative bg-white py-16 px-4 sm:px-6 md:px-12 mt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 max-[760px]:gap-4 items-center">
+        
         {/* Decorative swirl */}
         <Image
           src="/svgs/swirl-top.svg"
@@ -29,21 +30,25 @@ export default function StartLearning() {
         {/* Text Section */}
         <div className="text-center md:text-left">
           <h2
-            className={`${coolvetica.className} text-4xl sm:text-5xl md:text-6xl font-normal leading-tight mb-6`}
+            className={`${coolvetica.className} text-4xl sm:text-5xl md:text-[64px] font-normal leading-tight mb-6`}
           >
-            It<span>&apos;</span>s Easy to <br />
-            start{" "}
-            <span className="text-[#106e63] underline decoration-[#106e63]">
-              LEARNING
-            </span>
+            Wish to Join the <span className="underline">Team?</span>
           </h2>
           <p
-            className={`${sansation.className} text-gray-700 text-base sm:text-lg md:text-xl max-w-md mx-auto md:mx-0`}
+            className={`${sansation.className} text-gray-700 text-base sm:text-lg md:text-xl max-w-md mx-auto md:mx-0 mb-4`}
           >
-            A few clicks, a few details, and you<span>&apos;</span>re already
-            one step closer to success in your next exam. Just tell us your
-            name, class, board, and the exam you<span>&apos;</span>re preparing for!
+            Send us your details and essentials, let’s get started. Drop us a
+            mail.
+            <br />
+            All we need is:
           </p>
+          <ol
+            className={`${sansation.className} list-decimal list-inside text-gray-700 text-base sm:text-lg md:text-xl space-y-2`}
+          >
+            <li>Your Resume</li>
+            <li>A cover letter</li>
+            <li>Job role you wish to apply</li>
+          </ol>
         </div>
 
         {/* Blob & Image Section */}
@@ -53,14 +58,14 @@ export default function StartLearning() {
             alt="Background Blob"
             width={500}
             height={500}
-            className="w-full max-w-[400px] md:max-w-[500px] rotate-[270deg] opacity-20 scale-100 max-[760px]:scale-85"
+            className="w-full max-w-[400px] md:max-w-[500px] rotate-[270deg] opacity-20 scale-120 max-[760px]:scale-85"
           />
           <Image
-            src="/images/startlearning.png"
+            src="/images/jointeam.png"
             alt="Start Learning Illustration"
             width={300}
             height={300}
-            className="absolute top-20 w-4/5 sm:w-[300px] md:w-[350px] z-10 max-[760px]:scale-65 max-[760px]:top-[-50px] scale-120"
+            className="absolute top-40 w-4/5 sm:w-[300px] md:w-[350px] z-10 max-[760px]:scale-65 max-[760px]:top-[-50px] scale-150"
           />
           <Image
             src="/svgs/swirl-bottom.svg"

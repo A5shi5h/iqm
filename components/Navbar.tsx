@@ -23,7 +23,7 @@ const Navbar = () => {
       }`}
     >
       <div
-        className={`transition-opacity duration-300 max-w-7xl mx-auto px-4 py-4 flex items-center justify-between ${
+        className={`transition-opacity duration-300 max-w-9xl mx-auto px-6 py-4 flex items-center justify-between ${
           showLogin ? "opacity-20 pointer-events-none" : "opacity-100"
         }`}
       >
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-4 font-medium text-black">
-          {["Home", "About us", "Course", "Testimonial", "Blogs"].map(
+          {["Home", "About", "Course", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}
@@ -64,9 +64,9 @@ const Navbar = () => {
         <div className="hidden md:block">
           <button
             onClick={() => setLogin(true)}
-            className="bg-[#11796B] text-white px-8 py-2 rounded-2xl shadow-md text-lg font-semibold hover:bg-black transition-colors"
+            className="bg-[#11796B] text-white px-8 py-2 rounded-full shadow-md text-lg font-semibold hover:bg-black transition-colors"
           >
-            Login
+            Get Started
           </button>
         </div>
 

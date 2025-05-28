@@ -21,6 +21,24 @@ const sansation = localFont({
   variable: "--font-sansation",
 });
 
+const students = [
+  {
+    name: "Ayush Chettri",
+    text: "Classes were just awesome. Great and experienced teachers, had a great time studying in IQM",
+    image: "/images/testimonial1.jpg",
+  },
+  {
+    name: "Aditya Dahal",
+    text: "Extremely talented faculty with grounded and friendly nature. Suggested for excellence in results",
+    image: "/images/testimonial2.jpg",
+  },
+  {
+    name: "Anusriya Sharma",
+    text: "They create a positive, motivating environment where every student feels valued",
+    image: "/images/testimonial3.jpg",
+  },
+]
+
 export default function Testimonials() {
   return (
     <section className="relative py-16 px-4 sm:px-6 md:px-12 bg-white">
@@ -42,14 +60,14 @@ export default function Testimonials() {
           alt="Blob shape"
           width={60}
           height={60}
-          className="absolute top-10 left-10 scale-150 opacity-20"
+          className="absolute top-10 left-10 scale-150"
         />
         <Image
           src="/svgs/swirl-bottom.svg"
           alt="Blob shape"
           width={60}
           height={60}
-          className="rotate-90 scale-150 absolute top-10 right-10 opacity-20"
+          className="rotate-90 scale-150 absolute top-10 right-10"
         />
         <Image
           src="/svgs/crown.svg"
@@ -61,23 +79,7 @@ export default function Testimonials() {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-16">
-          {[
-            {
-              name: "Ayush Chettri",
-              text: "Classes were just awesome. Great and experienced teachers, had a great time studying in IQM",
-              image: "/images/testimonial1.jpg",
-            },
-            {
-              name: "Aditya Dahal",
-              text: "Extremely talented faculty with grounded and friendly nature. Suggested for excellence in results",
-              image: "/images/testimonial2.jpg",
-            },
-            {
-              name: "Anusriya Sharma",
-              text: "They create a positive, motivating environment where every student feels valued",
-              image: "/images/testimonial3.jpg",
-            },
-          ].map((testimonial, i) => (
+          {students.map((testimonial, i) => (
             <div
               key={i}
               className="bg-[#f5e9da] rounded-xl shadow-2xl shadow-slate-900 flex flex-col items-center text-center overflow-hidden max-[760px]:mx-10"

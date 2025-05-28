@@ -11,7 +11,7 @@ const coolvetica = localFont({
 export default function MobileApp() {
   return (
     <>
-      <main className={`${coolvetica.className} relative items-center justify-center bg-white text-center p-6 mb-50`}>
+      <main className={`${coolvetica.className} relative items-center justify-center bg-white text-center p-6 mb-30`}>
         
         {/* Heading */}
         <h1 className="text-4xl md:text-[64px] font-normal text-black mb-4">

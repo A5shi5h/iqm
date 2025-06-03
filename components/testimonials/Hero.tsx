@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section
-      className={`relative w-full mb-30 pt-38 items-center ${inter.className}`}
+      className={`relative w-full pt-56 items-center ${inter.className}`}
     >
 
       {/* Decorative Swirls */}

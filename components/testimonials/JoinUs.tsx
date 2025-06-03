@@ -19,7 +19,7 @@ const creato = localFont({
 
 export default function JoinUs() {
   return (
-    <main className="relative flex justify-center items-center  bg-white px-4 py-12 max-[760px]:px-10">
+    <main className="relative flex justify-center items-center  bg-transparent px-4 py-12 max-[760px]:px-10">
       <div className="flex flex-col-reverse md:flex-row w-full max-w-6xl rounded-[40px] py-10 max-[760px]:py-0 overflow-hidden bg-[#0E776A] shadow-lg">
         {/* Left: Image Section */}
         <div className="relative w-full md:w-[45%] flex items-center justify-center px-4 py-6 sm:p-8 md:p-10">
@@ -41,7 +41,7 @@ export default function JoinUs() {
             alt="swirl"
             width={0} // no need for fixed width
             height={0}
-            className="absolute z-10 top-25 right-70 scale-110 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+            className="absolute z-10 top-25 right-70 scale-80 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
           />
 
           <h1

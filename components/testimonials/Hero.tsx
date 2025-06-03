@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section
-      className={`relative w-full mb-40 pt-38 items-center overflow-hidden ${inter.className}`}
+      className={`relative w-full mb-30 pt-38 items-center ${inter.className}`}
     >
 
       {/* Decorative Swirls */}
@@ -31,7 +31,7 @@ export default function Hero() {
         alt="Top swirl"
         width={40}
         height={40}
-        className="absolute top-40 right-0 md:right-90 scale-190 rotate-180"
+        className="absolute top-40 right-0 md:right-90 scale-180 rotate-180"
       />
 
       <Image
@@ -39,12 +39,12 @@ export default function Hero() {
         alt="Bottom swirl"
         width={40}
         height={40}
-        className="absolute bottom-0 left-90 scale-200 rotate-180"
+        className="absolute bottom-0 left-90 scale-190 rotate-180"
       />
      
 
       {/* Right Side - Text */}
-      <div className="max-w-[38rem] mx-auto z-10 space-y-4">
+      <div className=" max-w-[38rem] mx-auto z-10 space-y-4">
         <h1 className={`${coolvetica.className} text-[48px] sm:text-[64px] font-normal leading-tight text-center pb-4 mb-12 border-b`}>
           Testimonials
         </h1>

@@ -77,7 +77,7 @@ const Navbar = () => {
             className="text-black"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? "" : <Menu size={34} />}
+            {menuOpen ? "" : <Menu size={24} />}
           </button>
         </div>
       </div>

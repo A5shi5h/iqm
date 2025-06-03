@@ -15,7 +15,7 @@ const sansation = localFont({
 
 export default function StartLearning() {
   return (
-    <section className="relative bg-white py-16 px-4 sm:px-6 md:px-12 mt-20 overflow-hidden">
+    <section className="relative bg-transparent py-16 px-4 sm:px-6 md:px-12 mt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 max-[760px]:gap-4 items-center">
         {/* Decorative swirl */}
         <Image
@@ -42,7 +42,8 @@ export default function StartLearning() {
           >
             A few clicks, a few details, and you<span>&apos;</span>re already
             one step closer to success in your next exam. Just tell us your
-            name, class, board, and the exam you<span>&apos;</span>re preparing for!
+            name, class, board, and the exam you<span>&apos;</span>re preparing
+            for!
           </p>
         </div>
 

@@ -19,12 +19,10 @@ const creato = localFont({
 
 export default function JoinUs() {
   return (
-    <main className="relative flex justify-center items-center  bg-white px-4 py-12 max-[760px]:px-10">
+    <main className="relative flex justify-center items-center bg-transparent px-4 py-12 max-[760px]:px-10">
       <div className="flex flex-col-reverse md:flex-row w-full max-w-6xl rounded-[40px] py-10 max-[760px]:py-0 overflow-hidden bg-[#0E776A] shadow-lg">
-
         {/* Left: Image Section */}
         <div className="relative w-full md:w-[45%] flex items-center justify-center px-4 py-6 sm:p-8 md:p-10">
-          
           {/* Background SVGs */}
           <Image
             src="/svgs/swirl-bottom.svg"
@@ -58,7 +56,7 @@ export default function JoinUs() {
             className={`${coolvetica.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black leading-snug font-normal`}
           >
             Join us!! <br />
-            Let’s get <span className="underline text-white">Started</span>
+            Let's get <span className="underline text-white">Started</span>
           </h1>
 
           <p

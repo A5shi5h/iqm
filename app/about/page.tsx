@@ -5,16 +5,22 @@ import JoinUs from "@/components/aboutUs/JoinUs";
 import React from "react";
 import MobileApp from "@/components/MobileApp";
 import Footer from "@/components/Footer";
+import ParallaxWrapper from "@/components/ParallaxWrapper";
+import ContentContainer from "@/components/ContentContainer";
 
 const page = () => {
   return (
     <>
-      <About />
-      <OurTeam />
-      <JoinTeam />
-      <JoinUs />
-      <MobileApp />
-      <Footer />
+      <ParallaxWrapper>
+        <About />
+      </ParallaxWrapper>
+      <ContentContainer>
+        <OurTeam />
+        <JoinTeam />
+        <JoinUs />
+        <MobileApp />
+        <Footer />
+      </ContentContainer>
     </>
   );
 };

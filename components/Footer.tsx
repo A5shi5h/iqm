@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { Mail, Instagram } from "lucide-react";
-import { FaWhatsapp } from 'react-icons/fa'; 
+import { FaWhatsapp } from "react-icons/fa";
 import localFont from "next/font/local";
 
 const sansation = localFont({
-    src: "../public/fonts/Sansation-Regular.ttf",
-    variable: "--font-sansation",
+  src: "../public/fonts/Sansation-Regular.ttf",
+  variable: "--font-sansation",
 });
 
 const creatoThin = localFont({
@@ -36,10 +36,12 @@ export default function Footer() {
           <p className={`${creatoThin.className} text-lg font-normal mb-4`}>
             Branding text will be written here as such
           </p>
-          <p className={`${creatoThin.className} text-lg font-normal mb-2`}>Join us on our socials:</p>
+          <p className={`${creatoThin.className} text-lg font-normal mb-2`}>
+            Join us on our socials:
+          </p>
           <div className="flex space-x-4">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-black hover:text-white">
-              <FaWhatsapp className="scale-170"/>
+              <FaWhatsapp className="scale-170" />
             </div>
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-black hover:text-white">
               <Instagram />
@@ -52,7 +54,11 @@ export default function Footer() {
 
         {/* Middle Section */}
         <div className="mb-10 md:mb-0">
-          <h3 className={`${sansation.className} text-[24px] font-normal underline mb-3`}>Company</h3>
+          <h3
+            className={`${sansation.className} text-[24px] font-normal underline mb-3`}
+          >
+            Company
+          </h3>
           <ul className={`${creatoThin.className} space-y-2 text-lg`}>
             <li>About us</li>
             <li>Testimonials</li>
@@ -61,7 +67,11 @@ export default function Footer() {
 
         {/* Right Section */}
         <div>
-          <h3 className={`${sansation.className} text-[24px] font-normal underline mb-3`}>Support</h3>
+          <h3
+            className={`${sansation.className} text-[24px] font-normal underline mb-3`}
+          >
+            Support
+          </h3>
           <ul className={`${creatoThin.className} space-y-2 text-lg`}>
             <li>Contact us</li>
             <li>Career</li>
@@ -71,7 +81,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Text */}
-    <div className={`${creatoThin.className} flex justify-between mt-24 text-sm font-normal text-white`}>
+      <div
+        className={`${creatoThin.className} flex justify-between mt-24 text-sm font-normal text-white`}
+      >
         <p>© The Inquisitive Mind 2025 | All rights reserved</p>
         <p>Privacy Policy & Teams of service</p>
       </div>

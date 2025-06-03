@@ -22,7 +22,7 @@ const coolvetica = localFont({
 export default function AboutUs() {
   return (
     <section
-      className={`${creatoThin.variable} ${sansation.variable} bg-white py-16 px-4 sm:px-6 lg:px-8`}
+      className={`${creatoThin.variable} ${sansation.variable} bg-transparent  py-16 px-4 sm:px-6 lg:px-8`}
     >
       {/* Stats */}
       <div className="max-w-6xl mx-auto text-center grid grid-cols-4 gap-4 mb-20">

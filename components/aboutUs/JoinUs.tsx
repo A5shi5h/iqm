@@ -19,7 +19,7 @@ const creato = localFont({
 
 export default function JoinUs() {
   return (
-    <main className="relative flex justify-center items-center  bg-white px-4 py-12 max-[760px]:px-10">
+    <main className="relative flex justify-center items-center  bg-transparent px-4 py-12 max-[760px]:px-10">
       <div className="flex flex-col-reverse md:flex-row w-full max-w-6xl rounded-[40px] py-20 max-[760px]:py-0 overflow-hidden bg-[#0E776A] shadow-lg">
 
         {/* Left: Image Section */}

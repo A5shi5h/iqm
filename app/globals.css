@@ -3,7 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-coolvetica: 'Coolvetica' , sans-serif; 
+  --font-coolvetica: "Coolvetica", sans-serif;
 }
 
 @theme inline {
@@ -21,9 +21,9 @@
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('/fonts/Coolvetica.ttf') format('ttf');
-  src: url('/fonts/Creato.otf') format('otf');
+  font-family: "Coolvetica";
+  src: url("/fonts/Coolvetica.ttf") format("ttf");
+  src: url("/fonts/Creato.otf") format("otf");
 }
 
 body {

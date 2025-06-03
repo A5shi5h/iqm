@@ -37,11 +37,11 @@ const students = [
     text: "They create a positive, motivating environment where every student feels valued",
     image: "/images/testimonial3.jpg",
   },
-]
+];
 
 export default function Testimonials() {
   return (
-    <section className="relative py-16 px-4 sm:px-6 md:px-12 bg-white">
+    <section className="relative py-16 px-4 sm:px-6 md:px-12 bg-transparent">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2

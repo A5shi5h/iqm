@@ -1,18 +1,19 @@
 "use client";
 
-import Image from 'next/image'
+import Image from "next/image";
 import localFont from "next/font/local";
 
 const coolvetica = localFont({
-    src: "../public/fonts/Coolvetica.ttf",
-    variable: "--font-creato-thin",
+  src: "../public/fonts/Coolvetica.ttf",
+  variable: "--font-creato-thin",
 });
 
 export default function MobileApp() {
   return (
     <>
-      <main className={`${coolvetica.className} relative items-center justify-center bg-white text-center p-6 mb-30`}>
-        
+      <main
+        className={`${coolvetica.className} relative items-center justify-center bg-transparent text-center p-6 mb-30`}
+      >
         {/* Heading */}
         <h1 className="text-4xl md:text-[64px] font-normal text-black mb-4">
           Try out our
@@ -35,7 +36,7 @@ export default function MobileApp() {
               <p className="text-black font-normal text-lg">coming soon</p>
             </div>
           </div>
-          
+
           <div className="relative">
             <Image
               src="/images/play-store.png"
@@ -51,5 +52,5 @@ export default function MobileApp() {
         </div>
       </main>
     </>
-  )
+  );
 }

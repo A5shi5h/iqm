@@ -3,12 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Menu, X } from "lucide-react";
 import LoginModal from "./LoginModal";
+import localFont from "next/font/local";
+
+const nexa = localFont({
+  src: "../public/fonts/Nexa-Heavy.ttf",
+});
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +20,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        inter.className
-      } w-full z-40 fixed top-0 bg-white ${
+      className={`${inter.className} w-full z-40 fixed top-0 bg-white ${
         showLogin ? "bg-slate-200" : "bg-white"
       }`}
     >
@@ -36,7 +38,7 @@ const Navbar = () => {
             height={40}
             className="rounded-full"
           />
-          <h1 className={`${poppins.className} font-bold text-2xl md:text-4xl`}>
+          <h1 className={`${nexa.className} font-bold text-2xl md:text-4xl`}>
             IQM
           </h1>
         </div>

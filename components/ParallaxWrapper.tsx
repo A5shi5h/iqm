@@ -31,10 +31,11 @@ export default function ParallaxWrapper({
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-screen"
+      className="fixed top-0 left-0 w-full h-screen pointer-events-auto"
       style={{
         transform: `scale(${scale})`,
         transition: "transform 0.1s ease-out",
+        zIndex: 1,
       }}
     >
       {children}

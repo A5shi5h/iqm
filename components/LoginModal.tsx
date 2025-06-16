@@ -5,11 +5,18 @@ import localFont from "next/font/local";
 import ModalWrapper from "./ModalWrapper";
 import toast from "react-hot-toast";
 
+const creatoThin = localFont({
+  src: "../public/fonts/CreatoDisplay-Thin.otf",
+});
+
 const creato = localFont({
   src: "../public/fonts/Creato.otf",
 });
 
 export default function LoginModal({ onClose }: { onClose: () => void }) {
+ 
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState<"email" | "otp">("email");
@@ -45,8 +52,8 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
 
   return (
     <ModalWrapper onClose={onClose}>
-      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
-        <div className="h-[568px] w-[320px] bg-[#FAEBD7] rounded-md px-[16px] py-[64px] relative">
+      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-90">
+        <div className="h-[580px] w-[390px] bg-[#FAEBD7] rounded-md px-4 py-[64px] relative">
           <button
             onClick={onClose}
             className="absolute top-4 right-4 text-2xl font-bold text-gray-700 hover:text-black cursor-pointer"
@@ -54,27 +61,50 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
             ✕
           </button>
 
-          <div className="text-[48px] font-bold text-center pt-[20%] leading-tight">
-            <h1 className={`${creato.className}`}>Welcome</h1>
-            <h1>
-              <span className="text-[#107869] pr-2 underline">back</span>!
+          <div className="text-[64px] font-bold text-center pt-[4%] leading-tight">
+            <h1 className={`${creato.className}`}>
+              Get <span className="text-[#107869] pr-2">Started</span>
             </h1>
           </div>
 
           {step === "email" && (
-            <div className={`pt-[60px] text-sm ${creato.className}`}>
-              <label>Email</label>
+            <div
+              className={`pt-[30px] p-6 text-md font-thin ${creatoThin.className}`}
+            >
+              <label>Name *</label>
               <br />
               <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type="name"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-black transition duration-200 text-gray-700 placeholder-gray-400 mt-2 bg-white"
               />
+              <div className="pt-4">
+                <label>Email *</label>
+                <br />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-black transition duration-200 text-gray-700 placeholder-gray-400 mt-2 bg-white"
+                />
+              </div>
+              <div className="pt-4">
+                <label>Phone *</label>
+                <br />
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-black transition duration-200 text-gray-700 placeholder-gray-400 mt-2 bg-white"
+                />
+              </div>
               <br />
               <div
-                className={`text-center mt-6 bg-[#107869] w-fit px-8 py-3 text-white absolute left-[26%] rounded-full ml-2 ${creato.className}`}
+                className={`bg-[#107869] w-fit px-6 py-2 text-white absolute right-10 rounded-full ml-2 ${creatoThin.className}`}
               >
                 <button onClick={sendOtp}>Send OTP</button>
               </div>
@@ -82,7 +112,7 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
           )}
 
           {step === "otp" && (
-            <div className={`pt-[30px] text-sm ${creato.className}`}>
+            <div className={`pt-[30px] text-sm ${creatoThin.className}`}>
               <label>Verify OTP</label>
               <br />
               <input
@@ -94,7 +124,7 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
               />
               <br />
               <div
-                className={`text-center mt-4 bg-[#107869] w-fit px-8 py-3 text-white absolute left-[26%] rounded-full ml-2 ${creato.className}`}
+                className={`text-center mt-4 bg-[#107869] w-fit px-8 py-3 text-white absolute left-[26%] rounded-full ml-2 ${creatoThin.className}`}
               >
                 <button onClick={verifyOtp}>Verify OTP</button>
               </div>

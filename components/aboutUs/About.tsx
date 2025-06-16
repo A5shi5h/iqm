@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import SignUpModal from "../SignUpModal";
-import { useState } from "react";
 
 const coolvetica = localFont({
   src: "../../public/fonts/Coolvetica.ttf",
@@ -18,7 +16,6 @@ const sansation = localFont({
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export default function Hero() {
-  const [showSignUp, setSignUp] = useState(false);
 
   return (
     <section
@@ -73,9 +70,6 @@ export default function Hero() {
         IQM began in Sikkim to meet the rising demand for competitive exam and board exam coaching. Starting with offline classes, it has grown into one of the top education institutes in the region.
         </p>
       </div>
-
-      {/* Modal */}
-      {showSignUp && <SignUpModal onClose={() => setSignUp(false)} />}
     </section>
   );
 }

@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import SignUpModal from "../SignUpModal";
-import { useState } from "react";
 
 const coolvetica = localFont({
   src: "../../public/fonts/Coolvetica.ttf",
@@ -18,8 +16,6 @@ const sansation = localFont({
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export default function Hero() {
-  const [showSignUp, setSignUp] = useState(false);
-
   return (
     <section
       className={`relative w-full pt-56 items-center ${inter.className}`}
@@ -52,9 +48,6 @@ export default function Hero() {
         Students at IQM have successfully qualified and excelled in board exams and top competitive exams across India, proving the strength of our teaching and guidance
         </p>
       </div>
-
-      {/* Modal */}
-      {showSignUp && <SignUpModal onClose={() => setSignUp(false)} />}
     </section>
   );
 }

@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${inter.className} w-full z-40 fixed top-0 bg-white ${
+      className={`${inter.className} w-full z-30 fixed top-0 bg-white ${
         showLogin ? "bg-slate-200" : "bg-white"
       }`}
     >
@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <button
             onClick={() => setLogin(true)}
-            className="bg-[#11796B] text-white px-8 py-2 rounded-full shadow-md text-lg font-semibold hover:bg-black transition-colors"
+            className="bg-[#11796B] text-white px-8 py-2 rounded-full shadow-md text-lg font-semibold hover:bg-black transition-colors cursor-pointer"
           >
             Get Started
           </button>

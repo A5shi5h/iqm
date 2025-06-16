@@ -12,13 +12,10 @@ export default function ModalWrapper({
   return (
     <>
       {/* Overlay */}
-      <div
-        className="fixed inset-0 bg-black/40 z-50"
-        onClick={onClose}
-      />
-      
+      <div className="fixed inset-0 bg-black/60 z-[1000]" onClick={onClose} />
+
       {/* Modal Content */}
-      <div className="fixed z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+      <div className="fixed z-[1001] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         {children}
       </div>
     </>

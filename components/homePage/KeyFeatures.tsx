@@ -125,6 +125,7 @@ function FeatureCard({
           height={120}
           width={120}
           className="scale-90 sm:scale-100 z-10 relative"
+          loading="lazy"
         />
         <Image
           src="/svgs/circle.svg"
@@ -132,6 +133,7 @@ function FeatureCard({
           height={100}
           width={100}
           className="opacity-40 absolute z-20"
+          loading="lazy"
           style={{ left: circleLeft }}
         />
       </div>
@@ -160,6 +162,7 @@ function TreeCurveBanner() {
         height={100}
         width={100}
         className="w-full absolute top-28 sm:top-38 z-30"
+        loading="lazy"
       />
       <Image
         src="/svgs/curve-border.svg"
@@ -167,6 +170,7 @@ function TreeCurveBanner() {
         height={100}
         width={100}
         className="w-full absolute top-24 sm:top-36 z-20"
+        loading="lazy"
       />
       {treePositions.map((left, index) => {
         const isScaled = index === 1 || index === 2;
@@ -183,6 +187,7 @@ function TreeCurveBanner() {
             alt={`Tree ${index}`}
             width={60}
             height={60}
+            loading="lazy"
             className={`${treeClasses}`}
             style={{ left }}
           />

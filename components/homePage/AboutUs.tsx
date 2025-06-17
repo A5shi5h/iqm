@@ -44,6 +44,7 @@ export default function AboutUs() {
               height={60}
               width={60}
               className="absolute z-0 opacity-30 top-5"
+              loading="lazy"
             />
             <p
               className={`${creatoThin.className} mt-1 text-lg sm:text-2xl md:text-3xl lg:text-4xl relative z-10`}
@@ -82,6 +83,7 @@ export default function AboutUs() {
             height={300}
             width={300}
             className="absolute opacity-30 bottom-0 left-0 w-[70%] sm:w-[300px]"
+            loading="lazy"
           />
           <Image
             src="/images/aboutImage.png"
@@ -89,6 +91,7 @@ export default function AboutUs() {
             height={300}
             width={300}
             className="relative z-10 w-[80%] sm:w-[300px] h-auto scale-140 max-[760px]:scale-100"
+            loading="lazy"
           />
         </div>
       </div>

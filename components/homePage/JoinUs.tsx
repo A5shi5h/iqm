@@ -30,6 +30,7 @@ export default function JoinUs() {
             width={0} // no need for fixed width
             height={0}
             className="absolute z-10 top-10 left-10 scale-70 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+            loading="lazy"
           />
 
           <Image
@@ -38,6 +39,7 @@ export default function JoinUs() {
             width={0}
             height={0}
             className="absolute z-0 top-0 left-0 opacity-30 w-56 h-56 scale-150 sm:w-72 sm:h-72 md:w-80 md:h-80 max-[760px]:scale-90 max-[760px]:top-[-250px] max-[760px]:left-[-40px]"
+            loading="lazy"
           />
 
           {/* Main Image */}
@@ -47,6 +49,7 @@ export default function JoinUs() {
             width={250}
             height={250}
             className="z-20 w-[65%] scale-135 sm:w-[70%] md:w-[80%] max-w-[320px] max-[760px]:hidden"
+            loading="lazy"
           />
         </div>
 
@@ -56,7 +59,7 @@ export default function JoinUs() {
             className={`${coolvetica.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black leading-snug font-normal`}
           >
             Join us!! <br />
-            Let's get <span className="underline text-white">Started</span>
+            Let<span>&apos;</span>s get <span className="underline text-white">Started</span>
           </h1>
 
           <p

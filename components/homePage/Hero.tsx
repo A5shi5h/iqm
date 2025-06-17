@@ -95,6 +95,7 @@ export default function Hero() {
             height={550}
             width={550}
             className="relative opacity-25 rotate-90 scale-110 left-10 max-[765px]:scale-100 max-[765px]:left-0"
+            loading="lazy"
           />
 
           {/* Hero Image */}
@@ -104,6 +105,7 @@ export default function Hero() {
             width={300}
             height={300}
             className="absolute z-10 scale-170 max-[1000px]:scale-120"
+            loading="lazy"
           />
         </div>
 
@@ -114,6 +116,7 @@ export default function Hero() {
           width={40}
           height={40}
           className="absolute top-36 left-[40%] md:left-[45%] scale-180 rotate-180"
+          loading="lazy"
         />
 
         <Image
@@ -122,6 +125,7 @@ export default function Hero() {
           width={40}
           height={40}
           className="absolute bottom-20 right-20 scale-200 rotate-90"
+          loading="lazy"
         />
       </section>
 

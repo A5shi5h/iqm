@@ -61,6 +61,7 @@ export default function Testimonials() {
           width={60}
           height={60}
           className="absolute top-10 left-10 scale-150"
+          loading="lazy"
         />
         <Image
           src="/svgs/swirl-bottom.svg"
@@ -68,6 +69,7 @@ export default function Testimonials() {
           width={60}
           height={60}
           className="rotate-90 scale-150 absolute top-10 right-10"
+          loading="lazy"
         />
         <Image
           src="/svgs/crown.svg"
@@ -75,6 +77,7 @@ export default function Testimonials() {
           width={60}
           height={60}
           className="scale-180 absolute top-35 left-75 -translate-x-1/2 max-[760px]:hidden"
+          loading="lazy"
         />
 
         {/* Testimonials Grid */}
@@ -101,6 +104,7 @@ export default function Testimonials() {
                   width={100}
                   height={100}
                   className="rounded-full mx-auto mb-6"
+                  loading="lazy"
                 />
               </div>
               <div className="bg-teal-700 text-white w-full p-4 pb-8">

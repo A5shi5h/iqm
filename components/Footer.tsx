@@ -17,11 +17,11 @@ const creatoThin = localFont({
 export default function Footer() {
   return (
     <footer className="relative max-w-6xl mx-auto items-center bg-[#1B5955] text-white px-6 py-12 md:px-20 rounded-t-[50px]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:gap-20 gap-2 md:text-left text-center">
         {/* Left section */}
         <div className="mb-10 md:mb-0 md:w-1/3">
-          <div className="flex items-center space-x-2 mb-4">
-            <div className="bg-[#F6EBD8] rounded-full w-10 h-10 flex items-center justify-center">
+          <div className="flex items-center max-md:justify-center space-x-2 mb-4">
+            <div className="bg-[#F6EBD8] rounded-full w-10 h-10">
               {/* Replace with your logo */}
               <Image
                 src="/images/logo2.jpg"
@@ -33,13 +33,13 @@ export default function Footer() {
             </div>
             <span className="text-white text-4xl font-bold">IQM</span>
           </div>
-          <p className={`${creatoThin.className} text-lg font-normal mb-4`}>
+          <p className={`${creatoThin.className} text-lg font-normal mb-12`}>
             Branding text will be written here as such
           </p>
           <p className={`${creatoThin.className} text-lg font-normal mb-2`}>
             Join us on our socials:
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 max-md:justify-center">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-black hover:text-white">
               <FaWhatsapp className="scale-170" />
             </div>
@@ -82,7 +82,7 @@ export default function Footer() {
 
       {/* Bottom Text */}
       <div
-        className={`${creatoThin.className} flex justify-between mt-24 text-sm font-normal text-white`}
+        className={`${creatoThin.className} md:flex text-center justify-between md:mt-24 mt-14 text-sm font-normal text-white`}
       >
         <p>© The Inquisitive Mind 2025 | All rights reserved</p>
         <p>Privacy Policy & Teams of service</p>

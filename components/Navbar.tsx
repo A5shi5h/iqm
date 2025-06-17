@@ -16,6 +16,10 @@ const creatoRegular = localFont({
   src: "../public/fonts/CreatoDisplay-Regular.otf",
 })
 
+const creatoBold = localFont({
+  src: "../public/fonts/CreatoDisplay-Bold.otf",
+})
+
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 
 const Navbar = () => {
@@ -70,7 +74,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <button
             onClick={() => setLogin(true)}
-            className="bg-[#11796B] text-white px-8 py-2 rounded-full shadow-md text-lg font-semibold hover:bg-black transition-colors cursor-pointer"
+            className={`${creatoBold.className} bg-[#11796B] text-white px-8 py-2 rounded-full shadow-md text-lg font-normal hover:bg-black transition-colors cursor-pointer`}
           >
             Get Started
           </button>
@@ -90,7 +94,7 @@ const Navbar = () => {
 
       {/* Mobile Slide-In Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 w-[40%] h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 w-[70%] h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -106,7 +110,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-col p-6 space-y-4 text-sm font-medium absolute top-2 ">
-          {["Home", "About us", "Course", "Testimonial", "Blogs"].map(
+          {["Home", "About", "Course", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}

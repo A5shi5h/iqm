@@ -118,7 +118,7 @@ export default function KeyFeatures() {
   return (
     <>
       {/* Stats */}
-      <div className="max-w-6xl mx-auto text-center flex justify-center items-start gap-4 mb-20">
+      <div className="max-w-6xl mx-auto text-center flex justify-center items-start gap-2 sm:gap-4 mb-10 sm:mb-20 overflow-hidden pt-6">
         {[
           { number: "6+", label: "Teachers" },
           { number: "10+", label: "Engineers" },
@@ -127,7 +127,7 @@ export default function KeyFeatures() {
           <div key={idx} className="flex items-center">
             <div className="relative flex flex-col items-center">
               <h2
-                className={`${coolvetica.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal z-10`}
+                className={`${coolvetica.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-normal z-10`}
               >
                 {number}
               </h2>
@@ -136,11 +136,11 @@ export default function KeyFeatures() {
                 alt="Blob shape"
                 height={60}
                 width={60}
-                className="absolute z-0 opacity-30 top-5"
+                className="absolute z-0 opacity-30 top-2 sm:top-3 md:top-4 lg:top-5"
                 loading="lazy"
               />
               <p
-                className={`${creatoThin.className} mt-1 text-lg sm:text-2xl md:text-3xl lg:text-4xl relative z-10`}
+                className={`${creatoThin.className} mt-1 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl relative z-10`}
               >
                 {label}
               </p>
@@ -151,7 +151,7 @@ export default function KeyFeatures() {
                 alt="Divider"
                 width={40}
                 height={40}
-                className="mx-24 scale-180"
+                className="mx-8 sm:mx-12 md:mx-16 lg:mx-20 xl:mx-24 scale-110 md:scale-180"
                 loading="lazy"
               />
             )}

@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <>
       <section
-        className={`w-full h-screen overflow-hidden px-6 md:px-30 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-40 ${inter.className}`}
+        className={`w-full h-screen overflow-hidden px-6 md:px-30 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center pt-40 max-[765px]:pt-26 ${inter.className}`}
       >
         {/* Left Side - Text */}
         <div ref={contentRef} className="z-10 space-y-4">
@@ -115,7 +115,7 @@ export default function Hero() {
           alt="Top swirl"
           width={40}
           height={40}
-          className="absolute top-36 left-[40%] md:left-[45%] scale-180 rotate-180"
+          className="absolute top-36 right-12 md:left-[45%] md:scale-180 scale-145 rotate-180"
           loading="lazy"
         />
 
@@ -124,7 +124,7 @@ export default function Hero() {
           alt="Bottom swirl"
           width={40}
           height={40}
-          className="absolute bottom-20 right-20 scale-200 rotate-90"
+          className="absolute bottom-20 right-20 scale-200 rotate-90 max-[765px]:right-0"
           loading="lazy"
         />
       </section>

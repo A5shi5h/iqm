@@ -12,6 +12,10 @@ const nexa = localFont({
   src: "../public/fonts/Nexa-Heavy.ttf",
 });
 
+const creatoRegular = localFont({
+  src: "../public/fonts/CreatoDisplay-Regular.otf",
+})
+
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 
 const Navbar = () => {
@@ -44,7 +48,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-4 font-medium text-black">
+        <div className={`${creatoRegular.className} hidden md:flex items-center space-x-4 font-normal text-black text-lg`}>
           {["Home", "About", "Courses", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link

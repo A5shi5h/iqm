@@ -8,19 +8,6 @@ const coolvetica = localFont({
   variable: "--font-creato-thin",
 });
 
-const creatoThin = localFont({
-  src: "../../public/fonts/CreatoDisplay-Thin.otf",
-});
-
-const creato = localFont({
-  src: "../../public/fonts/Creato.otf",
-});
-
-const sansation = localFont({
-  src: "../../public/fonts/Sansation-Regular.ttf",
-  variable: "--font-sansation",
-});
-
 const schools = [
   {
     name: "Manju Shree Public School",
@@ -52,7 +39,8 @@ export default function Schools() {
         <h2
           className={`${coolvetica.className} text-3xl sm:text-4xl md:text-[48px] lg:text-[64px] font-normal text-center text-black mb-20`}
         >
-          Our Students Come from<br />
+          Our Students Come from
+          <br />
           <span className="text-white underline">Leading Schools</span>
         </h2>
 
@@ -66,6 +54,7 @@ export default function Schools() {
                 width={160}
                 height={160}
                 className="w-[60px] sm:w-[80px] md:w-[100px] lg:w-[120px] xl:w-[140px] transition-all duration-300"
+                loading="lazy"
               />
             </div>
           ))}

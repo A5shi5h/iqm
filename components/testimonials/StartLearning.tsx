@@ -24,6 +24,7 @@ export default function StartLearning() {
           width={100}
           height={100}
           className="absolute right-0 top-10 rotate-90 scale-75 max-md:scale-50"
+          loading="lazy"
         />
 
         {/* Text Section */}
@@ -42,7 +43,8 @@ export default function StartLearning() {
           >
             A few clicks, a few details, and you<span>&apos;</span>re already
             one step closer to success in your next exam. Just tell us your
-            name, class, board, and the exam you<span>&apos;</span>re preparing for!
+            name, class, board, and the exam you<span>&apos;</span>re preparing
+            for!
           </p>
         </div>
 
@@ -54,6 +56,7 @@ export default function StartLearning() {
             width={500}
             height={500}
             className="w-full max-w-[400px] md:max-w-[500px] rotate-[270deg] opacity-20 scale-100 max-[760px]:scale-85"
+            loading="lazy"
           />
           <Image
             src="/images/startlearning.png"
@@ -61,6 +64,7 @@ export default function StartLearning() {
             width={300}
             height={300}
             className="absolute top-20 w-4/5 sm:w-[300px] md:w-[350px] z-10 max-[760px]:scale-65 max-[760px]:top-[0px] scale-120 max-[1000px]:scale-90 max-[1000px]:top-0 max-[700px]:scale-90"
+            loading="lazy"
           />
           <Image
             src="/svgs/swirl-bottom.svg"
@@ -68,6 +72,7 @@ export default function StartLearning() {
             width={100}
             height={100}
             className="absolute bottom-0 left-0 scale-75 max-md:scale-55"
+            loading="lazy"
           />
         </div>
       </div>

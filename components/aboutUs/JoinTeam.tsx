@@ -25,6 +25,7 @@ export default function StartLearning() {
           width={100}
           height={100}
           className="absolute right-0 top-10 rotate-90 scale-75"
+          loading="lazy"
         />
 
         {/* Text Section */}
@@ -59,6 +60,7 @@ export default function StartLearning() {
             width={500}
             height={500}
             className="w-full max-w-[400px] md:max-w-[500px] rotate-[270deg] opacity-20 scale-120 max-[760px]:scale-85"
+            loading="lazy"
           />
           <Image
             src="/images/jointeam.png"
@@ -66,6 +68,7 @@ export default function StartLearning() {
             width={300}
             height={300}
             className="absolute top-40 w-4/5 sm:w-[300px] md:w-[350px] z-10 max-[760px]:scale-65 max-[760px]:top-[-50px] scale-150"
+            loading="lazy"
           />
           <Image
             src="/svgs/swirl-bottom.svg"
@@ -73,6 +76,7 @@ export default function StartLearning() {
             width={100}
             height={100}
             className="absolute bottom-0 left-0 scale-75"
+            loading="lazy"
           />
         </div>
       </div>

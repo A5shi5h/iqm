@@ -10,11 +10,6 @@ const coolvetica = localFont({
   variable: "--font-creato-thin",
 });
 
-const sansation = localFont({
-  src: "../../public/fonts/Sansation-Regular.ttf",
-  variable: "--font-sansation",
-});
-
 const creatoThin = localFont({
   src: "../../public/fonts/CreatoDisplay-Thin.otf",
   variable: "--font-creato-thin",
@@ -35,6 +30,7 @@ export default function KeyFeatures() {
           height={220}
           width={220}
           className="opacity-30 z-0"
+          loading="lazy"
         />
       </div>
 
@@ -55,6 +51,7 @@ export default function KeyFeatures() {
               height={100}
               width={100}
               className="w-full absolute top-28 sm:top-0 z-30 rotate-180"
+              loading="lazy"
             />
             <Image
               src="/svgs/curve-border.svg"
@@ -62,6 +59,7 @@ export default function KeyFeatures() {
               height={100}
               width={100}
               className="w-full absolute top-24 sm:top-0 z-20 rotate-180"
+              loading="lazy"
             />
        </div>
     </>
@@ -79,6 +77,7 @@ function TreeCurveBanner() {
         height={100}
         width={100}
         className="w-full absolute top-28 sm:top-38 z-30"
+        loading="lazy"
       />
       <Image
         src="/svgs/curve-border.svg"
@@ -86,6 +85,7 @@ function TreeCurveBanner() {
         height={100}
         width={100}
         className="w-full absolute top-24 sm:top-35 z-20"
+        loading="lazy"
       />
       {treePositions.map((left, index) => {
         const isScaled = index === 1 || index === 2;
@@ -102,6 +102,7 @@ function TreeCurveBanner() {
             alt={`Tree ${index}`}
             width={60}
             height={60}
+            loading="lazy"
             className={`${treeClasses}`}
             style={{ left }}
           />

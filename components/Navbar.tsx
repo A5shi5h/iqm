@@ -7,6 +7,13 @@ import { Inter } from "next/font/google";
 import { Menu, X } from "lucide-react";
 import LoginModal from "./LoginModal";
 import localFont from "next/font/local";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebook,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const nexa = localFont({
   src: "../public/fonts/Nexa-Heavy.ttf",
@@ -14,11 +21,11 @@ const nexa = localFont({
 
 const creatoRegular = localFont({
   src: "../public/fonts/CreatoDisplay-Regular.otf",
-})
+});
 
 const creatoBold = localFont({
   src: "../public/fonts/CreatoDisplay-Bold.otf",
-})
+});
 
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] });
 
@@ -52,8 +59,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className={`${creatoRegular.className} hidden md:flex items-center space-x-4 font-normal text-black text-lg`}>
-          {["Home", "About", "Courses", "Testimonial", "Blogs"].map(
+        <div
+          className={`${creatoRegular.className} hidden md:flex items-center space-x-4 font-normal text-black text-md`}
+        >
+          {["Home", "About Us", "Courses", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}
@@ -87,14 +96,14 @@ const Navbar = () => {
             className="text-black"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            {menuOpen ? "" : <Menu size={24} />}
+            {menuOpen ? "" : <Menu size={32} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Slide-In Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 w-[70%] h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 w-[80%] h-full bg-white shadow-lg z-40 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -105,12 +114,12 @@ const Navbar = () => {
             className="text-black absolute top-8 "
             aria-label="Close menu"
           >
-            <X size={24} />
+            <X size={32} />
           </button>
         </div>
 
-        <div className="flex flex-col p-6 space-y-4 text-sm font-medium absolute top-2 ">
-          {["Home", "About", "Course", "Testimonial", "Blogs"].map(
+        <div className="flex flex-col p-6 space-y-4 text-md font-medium absolute top-2 left-0 right-0 bottom-0">
+          {["Home", "About Us", "Course", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}
@@ -126,6 +135,58 @@ const Navbar = () => {
               </Link>
             )
           )}
+          <div className="mt-auto flex justify-center gap-6 pb-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram
+                size={28}
+                className="text-black hover:text-black transition-colors"
+              />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter
+                size={28}
+                className="text-black hover:text-black transition-colors"
+              />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook
+                size={28}
+                className="text-black hover:text-black transition-colors"
+              />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin
+                size={28}
+                className="text-black hover:text-black transition-colors"
+              />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube
+                size={28}
+                className="text-black hover:text-black transition-colors"
+              />
+            </a>
+          </div>
         </div>
       </div>
 

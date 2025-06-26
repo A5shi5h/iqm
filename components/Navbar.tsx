@@ -62,7 +62,7 @@ const Navbar = () => {
         <div
           className={`${creatoRegular.className} hidden md:flex items-center space-x-4 font-normal text-black text-md`}
         >
-          {["Home", "About Us", "Courses", "Testimonial", "Blogs"].map(
+          {["Home", "About", "Courses", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}
@@ -119,7 +119,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-col p-6 space-y-4 text-md font-medium absolute top-2 left-0 right-0 bottom-0">
-          {["Home", "About Us", "Course", "Testimonial", "Blogs"].map(
+          {["Home", "About", "Course", "Testimonial", "Blogs"].map(
             (label, index) => (
               <Link
                 key={index}

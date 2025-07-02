@@ -137,6 +137,7 @@ const Navbar = () => {
           )}
           <div className="mt-auto flex justify-center gap-6 pb-4">
             <a
+              title="Instagram"
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,6 +148,7 @@ const Navbar = () => {
               />
             </a>
             <a
+              title="Twitter"
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -157,6 +159,7 @@ const Navbar = () => {
               />
             </a>
             <a
+              title="Facebook"
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -167,6 +170,7 @@ const Navbar = () => {
               />
             </a>
             <a
+              title="LinkedIn"
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -177,6 +181,7 @@ const Navbar = () => {
               />
             </a>
             <a
+              title="Youtube"
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
